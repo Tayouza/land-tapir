@@ -1,0 +1,39 @@
+/* =========================================
+   Brush Stroke Decoration
+   ========================================= */
+.brush-stroke {
+    position: relative;
+    z-index: 1;
+}
+
+.brush-stroke::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 110%;
+    height: 30%;
+    background-color: #f97316;
+    z-index: -1;
+    opacity: 0.2;
+    transform: rotate(-2deg);
+    border-radius: 4px;
+}
+
+.dark .brush-stroke::after {
+    opacity: 0.4;
+}
+
+/* =========================================
+   Scroll Reveal Animation
+   ========================================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
