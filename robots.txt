@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tapirpinturas.com.br/sitemap.xml
+Sitemap: https://tapirdesouza.site/sitemap.xml

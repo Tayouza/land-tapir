@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://tapirpinturas.com.br/</loc>
+        <loc>https://tapirdesouza.site/</loc>
         <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://tapirpinturas.com.br/imgs/tapir_retrato.png</image:loc>
+            <image:loc>https://tapirdesouza.site/imgs/tapir_retrato.png</image:loc>
             <image:title>Tapir de Souza - Pintor Profissional em Porto Alegre</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://tapirpinturas.com.br/imgs/massa_corrida.png</image:loc>
+            <image:loc>https://tapirdesouza.site/imgs/massa_corrida.png</image:loc>
             <image:title>Aplicação de massa corrida profissional</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://tapirpinturas.com.br/imgs/dois_pintores.png</image:loc>
+            <image:loc>https://tapirdesouza.site/imgs/dois_pintores.png</image:loc>
             <image:title>Equipe de pintores profissionais em ação</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://tapirpinturas.com.br/imgs/servico_concluido.png</image:loc>
+            <image:loc>https://tapirdesouza.site/imgs/servico_concluido.png</image:loc>
             <image:title>Resultado final: sala com pintura profissional concluída</image:title>
         </image:image>
     </url>
