@@ -30,7 +30,7 @@
     <meta property="og:title" content="Tapir de Souza | Pintor Profissional em Porto Alegre" />
     <meta property="og:description"
         content="Mais de 30 anos transformando ambientes em Porto Alegre. Pintura residencial, comercial, massa corrida, epóxi e esmalte sintético. Peça seu orçamento grátis!" />
-    <meta property="og:image" content="https://tapirdesouza.site/imgs/tapir_retrato.png" />
+    <meta property="og:image" content="https://tapirdesouza.site/imgs/tapir_retrato.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Tapir de Souza - Pintor Profissional em Porto Alegre" />
@@ -42,7 +42,7 @@
     <meta name="twitter:title" content="Tapir de Souza | Pintor Profissional em Porto Alegre" />
     <meta name="twitter:description"
         content="Mais de 30 anos transformando ambientes em Porto Alegre. Pintura residencial, comercial, massa corrida, epóxi e esmalte sintético." />
-    <meta name="twitter:image" content="https://tapirdesouza.site/imgs/tapir_retrato.png" />
+    <meta name="twitter:image" content="https://tapirdesouza.site/imgs/tapir_retrato.webp" />
 
     <!-- ===================== Dados Estruturados JSON-LD ===================== -->
     <script type="application/ld+json">
@@ -55,7 +55,7 @@
       "description": "Serviços de pintura profissional em Porto Alegre e região. Especialidade em massa corrida lisa, pintura residencial, comercial, epóxi e esmalte sintético. Mais de 30 anos de experiência.",
       "url": "https://tapirdesouza.site/",
       "telephone": "+55-51-99886-4100",
-      "image": "https://tapirdesouza.site/imgs/tapir_retrato.png",
+      "image": "https://tapirdesouza.site/imgs/tapir_retrato.webp",
       "priceRange": "$$",
       "currenciesAccepted": "BRL",
       "paymentAccepted": "Dinheiro, PIX, Transferência",
@@ -106,12 +106,14 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;700&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" rel="stylesheet" />
 
     <!-- ===================== Tailwind CSS (CDN) + Custom Config ===================== -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography" fetchpriority="high"></script>
     <script src="tailwind.config.js"></script>
 
+    <link rel="preload" as="image" href="imgs/massa_corrida.webp" fetchpriority="high" />
     <!-- ===================== Custom Styles ===================== -->
     <link href="styles.css" rel="stylesheet" />
 </head>
@@ -130,7 +132,7 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" aria-label="Tapir Pinturas — página inicial">
+                    <a href="index.html" aria-label="TAPIR PINTURAS — página inicial">
                         <span class="font-display font-bold text-2xl text-primary tracking-wide">TAPIR<span
                                 class="text-gray-800 dark:text-white">PINTURAS</span></span>
                     </a>
@@ -251,7 +253,7 @@
                             <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-orange-500/20 z-0"></div>
                             <img alt="Tapir de Souza sorrindo, pintor profissional"
                                 class="absolute inset-0 w-full h-full object-cover z-10 hover:scale-105 transition-transform duration-700"
-                                src="imgs/tapir_retrato.png" />
+                                src="imgs/tapir_retrato.webp" />
                         </div>
 
                         <!-- Floating Badge -->
@@ -284,20 +286,20 @@
                     class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-gray-700 reveal">
                     <div class="p-4">
                         <span class="block text-4xl font-display font-bold text-primary mb-2">1995</span>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Porto Alegre - RS</h3>
+                        <p class="text-lg font-semibold text-gray-900 dark:text-white">Porto Alegre - RS</p>
                         <p class="text-gray-500 dark:text-gray-400 mt-2">
                             Início da carreira profissional.
                         </p>
                     </div>
                     <div class="p-4">
                         <span class="block text-4xl font-display font-bold text-primary mb-2">30+</span>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Anos de Experiência</h3>
+                        <p class="text-lg font-semibold text-gray-900 dark:text-white">Anos de Experiência</p>
                         <p class="text-gray-500 dark:text-gray-400 mt-2">Domínio total de técnicas de pintura, epóxi e
                             acabamentos finos.</p>
                     </div>
                     <div class="p-4">
                         <span class="block text-4xl font-display font-bold text-primary mb-2">100%</span>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Compromisso</h3>
+                        <p class="text-lg font-semibold text-gray-900 dark:text-white">Compromisso</p>
                         <p class="text-gray-500 dark:text-gray-400 mt-2">Pontualidade, limpeza e respeito pelo seu
                             patrimônio.</p>
                     </div>
@@ -323,54 +325,58 @@
                         <div class="grid grid-cols-2 gap-4 pb-8">
                             <img alt="Preparação de parede com massa corrida"
                                 class="rounded-xl shadow-lg w-full h-64 object-cover transform translate-y-8"
-                                src="imgs/massa_corrida.png" />
+                                src="imgs/massa_corrida.webp" />
                             <img alt="Dois pintores trabalhando em paredes coloridas"
-                                class="rounded-xl shadow-lg w-full h-64 object-cover" src="imgs/dois_pintores.png" />
+                                class="rounded-xl shadow-lg w-full h-64 object-cover" src="imgs/dois_pintores.webp" />
                         </div>
                     </div>
 
                     <!-- Text Content -->
                     <div class="order-1 lg:order-2 mb-12 lg:mb-0 reveal">
-                        <h2 class="text-sm font-bold text-primary tracking-widest uppercase mb-3">O Segredo da Qualidade
-                        </h2>
-                        <h3 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-6">A
+                        <p class="text-sm font-bold text-primary tracking-widest uppercase mb-3">O Segredo da Qualidade
+                        </p>
+                        <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-6">A
                             pintura
                             perfeita começa <br />antes da tinta.</h3>
-                        <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                            Muitos pintores apressam a preparação, mas é aí que o <strong
-                                class="text-gray-900 dark:text-white">Tapir de Souza</strong> se destaca. O segredo de
-                            uma
-                            parede lisa, sem ondulações e durável está no preparo.
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <span
-                                    class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                            <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                                Muitos pintores apressam a preparação, mas é aí que o <strong
+                                    class="text-gray-900 dark:text-white">Tapir de Souza</strong> se destaca. O segredo
+                                de
+                                uma
+                                parede lisa, sem ondulações e durável está no preparo.
+                            </p>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
                                     <span
-                                        class="material-icons-outlined text-sm text-green-600 dark:text-green-400">check</span>
-                                </span>
-                                <span class="ml-4 text-gray-700 dark:text-gray-300">Lixamento técnico para uniformidade
-                                    total.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span
-                                    class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                                        class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                                        <span
+                                            class="material-icons-outlined text-sm text-green-600 dark:text-green-400">check</span>
+                                    </span>
+                                    <span class="ml-4 text-gray-700 dark:text-gray-300">Lixamento técnico para
+                                        uniformidade
+                                        total.</span>
+                                </li>
+                                <li class="flex items-start">
                                     <span
-                                        class="material-icons-outlined text-sm text-green-600 dark:text-green-400">check</span>
-                                </span>
-                                <span class="ml-4 text-gray-700 dark:text-gray-300">Correção minuciosa de imperfeições e
-                                    fissuras.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span
-                                    class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                                        class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                                        <span
+                                            class="material-icons-outlined text-sm text-green-600 dark:text-green-400">check</span>
+                                    </span>
+                                    <span class="ml-4 text-gray-700 dark:text-gray-300">Correção minuciosa de
+                                        imperfeições e
+                                        fissuras.</span>
+                                </li>
+                                <li class="flex items-start">
                                     <span
-                                        class="material-icons-outlined text-sm text-green-600 dark:text-green-400">check</span>
-                                </span>
-                                <span class="ml-4 text-gray-700 dark:text-gray-300">Proteção completa de pisos e móveis
-                                    antes de começar.</span>
-                            </li>
-                        </ul>
+                                        class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                                        <span
+                                            class="material-icons-outlined text-sm text-green-600 dark:text-green-400">check</span>
+                                    </span>
+                                    <span class="ml-4 text-gray-700 dark:text-gray-300">Proteção completa de pisos e
+                                        móveis
+                                        antes de começar.</span>
+                                </li>
+                            </ul>
                     </div>
 
                 </div>
@@ -385,13 +391,13 @@
 
                 <!-- Section Header -->
                 <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-                    <h2 class="text-sm font-bold text-primary tracking-widest uppercase mb-3">Nossos Serviços</h2>
-                    <h3 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white">Soluções
+                    <p class="text-sm font-bold text-primary tracking-widest uppercase mb-3">Nossos Serviços</p>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white">Soluções
                         Completas
                         em Pintura</h3>
-                    <p class="mt-4 text-gray-600 dark:text-gray-400">Da preparação à demão final, cuidamos de cada
-                        detalhe
-                        da sua obra ou reforma.</p>
+                        <p class="mt-4 text-gray-600 dark:text-gray-400">Da preparação à demão final, cuidamos de cada
+                            detalhe
+                            da sua obra ou reforma.</p>
                 </div>
 
                 <!-- Services Grid -->
@@ -468,7 +474,7 @@
                     <div
                         class="group bg-primary rounded-2xl p-8 text-white shadow-lg shadow-orange-500/30 transform hover:-translate-y-1 transition-all duration-300 flex flex-col justify-center items-center text-center reveal">
                         <i class="fa-brands fa-whatsapp text-5xl mb-4 leading-none" aria-hidden="true"></i>
-                        <h4 class="text-2xl font-display font-bold mb-2">Tem um projeto?</h4>
+                        <p class="text-2xl font-display font-bold mb-2">Tem um projeto?</p>
                         <p class="text-orange-100 mb-6">Entre em contato agora e peça um orçamento sem compromisso.</p>
                         <a class="bg-white text-primary px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors w-full"
                             href="https://wa.me/5551998864100" target="_blank" rel="noopener"
@@ -547,7 +553,7 @@
                     <!-- Contact Image -->
                     <div class="md:w-1/2 bg-gray-200 relative min-h-[300px]">
                         <img alt="Sala de cliente com pintura profissional concluída"
-                            class="absolute inset-0 w-full h-full object-cover" src="imgs/servico_concluido.png" />
+                            class="absolute inset-0 w-full h-full object-cover" src="imgs/servico_concluido.webp" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-10">
                             <p class="text-white font-medium">Atendendo Porto Alegre e Região Metropolitana.</p>
                         </div>
@@ -566,7 +572,7 @@
 
                 <!-- Section Header -->
                 <div class="text-center mb-14 reveal">
-                    <h2 class="text-sm font-bold text-primary tracking-widest uppercase mb-3">Dúvidas Frequentes</h2>
+                    <p class="text-sm font-bold text-primary tracking-widest uppercase mb-3">Dúvidas Frequentes</p>
                     <h3 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white">
                         Perguntas sobre o serviço
                     </h3>
